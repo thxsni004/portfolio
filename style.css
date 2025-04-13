@@ -57,17 +57,17 @@
 }
 
 /* Responsive typography */
-@media screen and (max-width:992px){
-:root{
---h1-font-size: ;
---h2-font-size: ;
---h3-font-size: ;
---normal-font-size: ;
---small-font-size:  ;
---smaller-font-size: ;
-
-}
-}
+@media screen and (max-width: 992px) {
+    :root {
+      --h1-font-size: 2rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: 0.875rem;
+      --smaller-font-size: 0.75rem;
+    }
+  }
+  
 /*=========== BASE ===========*/
 *{
     margin:0;
