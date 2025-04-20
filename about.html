@@ -17,131 +17,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 <body>
-    
-<section class="about section" id="about">
+
+  <style>
+    .navitem {
+        padding: 0 15px;
+        font-weight: bold;
+        color: #000;
+        text-decoration: none;
+    }
+    .navitem:hover {
+        color: #007bff;
+    }
+    .navbar {
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+
+<!--======================HEADER / NAVBAR=====================-->
+<nav class="navbar navbar-expand-lg navbar-light bg-black" style="padding: 5px 15px;">
+<div class="container-fluid">
+<!-- Toggle button -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+  aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- Brand -->
+<a class="navbar-brand" href="#">
+  <img src="port.jpg" height="100" alt="portfolio Logo" loading="lazy" />
+</a>
+
+<!-- Nav links -->
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+      <a class="navitem text-white" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="navitem text-white" href="about.html">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="navitem text-white" href="resume.html">Resume</a>
+    </li>
+    <li class="nav-item">
+      <a class="navitem text-white" href="portfolio.html">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="navitem text-white" href="contact.html">Contact</a>
+    </li>
+  </ul>
+</div>
+</div>
+</nav>
+
+  <section class="about section" id="about">
     <div class="about__container container grid">
-      <img src="thas.jpg" alt="" class="about__img">
-  
-  
-      <div class="about__content">
-        <h2 class="section__title">About Me</h2>
-  
-        <p class="about__description">I am a passionate and enthusiastic MERN (MongoDB, Express.js, React.js, Node.js) Stack Developer eager to contribute my skills and grow in the field of web development. With a solid foundation in JavaScript and hands-on experience in developing full-stack web applications, I am dedicated to creating responsive, user-friendly, and scalable solutions.</p>
-  
-        <div class="tabs__btns">
-    
-          <span class="tabs__btns tab__active" data-target="#skills">Main Skills</span>
-          <span class="tabs__btns"  data-target="#qualification">Qualification</span>
-          <span class="tabs__btns"  data-target="#experiance">Experience</span>
-  
-  
-          <!-- mainskills -->
+        <img src="thas.jpg" alt="Thasni" class="about__img">
+
+        <div class="about__content">
+            <h2 class="section__title">About Me</h2>
+
+            <p class="about__description">
+                I am a passionate and enthusiastic MERN (MongoDB, Express.js, React.js, Node.js) Stack Developer eager to contribute my skills and grow in the field of web development. With a solid foundation in JavaScript and hands-on experience in developing full-stack web applications, I am dedicated to creating responsive, user-friendly, and scalable solutions.
+            </p>
+
+            <div class="tabs__btns">
+                <span class="tabs__btns tab__active" data-target="#skills">Main Skills</span>
+                <span class="tabs__btns" data-target="#qualification">Qualification</span>
+                <span class="tabs__btns" data-target="#experience">Experience</span>
+            </div>
+
+            <div class="tabs__content">
+                <!-- Main Skills Tab -->
+                <div class="tabs__item tab__active" data-content id="skills">
+                    <div class="tabs__data grid">
+                        <p class="tabs__description">
+                            <span>Frontend Development</span> - React.js
+                            <span>Skilled in using JSX for seamless HTML integration within JavaScript, building dynamic and responsive user interfaces.</span>
+                        </p>
+                        <p class="tabs__description">
+                            <span>Database Management</span> - MongoDB
+                            <span>Proficient in performing CRUD operations and implementing advanced queries to manage and retrieve data efficiently.</span>
+                        </p>
+                        <p class="tabs__description">
+                            <span>Web & UI Design</span> - Development
+                            <span>Experienced in designing modern websites and user-friendly web experiences using HTML, CSS, and responsive frameworks.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Qualification Tab -->
+                <div class="tabs__item" data-content id="qualification">
+                    <div class="tabs__data grid">
+                        <p class="tabs__description">
+                            <span>Bachelor’s of Computer Application (BCA)</span> - Degree
+                            <span>Completed my Bachelor's degree in Computer Applications under Calicut University.</span>
+                        </p>
+                        <p class="tabs__description">
+                            <span>MERN Stack Development</span> - Internship
+                            <span>Completed a MERN Stack development course at One Team Solution, Calicut.</span>
+                        </p>
+                        <p class="tabs__description">
+                            <span>Android Development</span> - Internship
+                            <span>Completed an Android Development course at Grapes, Thrissur.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience Tab -->
+                <div class="tabs__item" data-content id="experience">
+                    <div class="tabs__data grid">
+                        <p class="tabs__description">
+                            <span>Logistics Executive</span> - Instamart
+                            <span>Responsible for accurately selecting and preparing customer orders from the inventory, ensuring quality and timeliness in a fast-paced quick-commerce environment.</span>
+                        </p>
+                        <p class="tabs__description">
+                            <span>Financial Advisor</span> - Aditya Birla Capital
+                            <span>As a Financial Advisor, I provide tailored financial advice and work in the recruitment section to source, assess, and onboard top talent for the company.</span>
+                        </p>
+                        <p class="tabs__description">
+                            <span>MERN Stack Developer</span> - One Team Solution
+                            <span>Designing, developing, and maintaining web applications using MongoDB, Express.js, React.js, and Node.js. Collaborating with cross-functional teams to deliver high-quality software solutions.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="tabs__content">
-          <div class="tabs__item tab__active " data-content id="skills">
-            <div class="tabs__data grid">
-              <p class="tabs__description">
-                <span>Frontend Development</span>- React.js
-                <span>Skilled in using JSX for seamless HTML integration within JavaScript.</span>
-              </p>
-  
-  
-              <p class="tabs__description">
-                <span>Database Management </span>- MongoDB
-                <span>Skilled in performing CRUD operations (Create, Read, Update, Delete) and implementing advanced queries to manipulate and retrieve data efficiently.</span>
-              </p>
-  
-  
-  
-              <p class="tabs__description">
-                <span>Web and user interface design</span>- Development
-                <span>Website, Web Experience, ...</span>
-              </p>
-  
-  
-  
-  
-  
-            </div>
-          </div>
-  
-          <!-- qualification -->
-  
-          <div class="tabs__item " data-content id="qualification">
-            <div class="tabs__data grid">
-              <p class="tabs__description">
-                <span>Bachelors of Computer Application</span>- Degree
-                <span>i'm completed my Bachelors degree in computer Application under calicut university</span>
-              </p>
-  
-  
-              <p class="tabs__description">
-                <span>MERN Stack development </span>- Internship
-                <span>Mern stack development course in one team solution calicut</span>
-              </p>
-  
-              <p class="tabs__description">
-                <span>Android Development</span>- Internship
-                <span>Android Development course in Grapes thrissur</span>
-              </p>
-  
-  
-  
-              <!-- <p class="tabs__description">
-                <span>Web and user interface design</span>- Development
-                <span>Website, Web Experience, ...</span>
-              </p> -->
-  
-  
-  
-  
-  
-            </div>
-          </div>
-  
-  
-  <!-- experiance -->
-  
-  <div class="tabs__item" data-content id="experiance">
-    <div class="tabs__data grid">
-      <p class="tabs__description">
-        <span>Logistics Executive</span>- Instamart
-        <span> Responsible for accurately selecting and preparing customer orders from the inventory, ensuring quality and timeliness in a fast-paced quick-commerce environment.</span>
-      </p>
-
-
-      <p class="tabs__description">
-        <span>Financial Advisor </span>- Aditya Birla Capital
-        <span>As a Financial Advisor at Aditya Birla Capital, I specialize in providing tailored financial advice to clients while also working in the recruitment section to source, assess, and onboard top talent for the company</span>
-      </p>
-
-
-
-      <p class="tabs__description">
-        <span>Mern Stack Developer</span>- One Team Solution
-        <span>As a MERN Stack Developer at One Team Solution, I design, develop, and maintain web applications using MongoDB, Express.js, React, and Node.js. I collaborate closely with cross-functional teams to deliver high-quality software solutions that meet both user needs and business requirements.</span>
-      </p>
-
-
-
-
-
     </div>
-  </div>
+</section>
 
-  
-  
-  
-  
-            </div>
-          </div>
-  
-        </div>
-      </div>
-    </div>
-  </section>
   <script src="main.js"></script>
     
 </body>
